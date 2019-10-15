@@ -1,142 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Sincero</title>
+  <title>Sincero</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Livvic&display=swap" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+</head>
 
-  </head>
+<body id="page-top">
 
-  <body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar d-flex navbar-expand-lg bg-secondary text-uppercase fixed-top m-0" id="mainNav" style="padding:0;">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger text-lowercase" href="#page-top"><img src="img/logo.png" width="52" height="56" title="icon" alt="icon"></a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary2 rounded" style="color:#36B1D8;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1" style="padding-left: 5px;font-size: 26px;">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-lowercase" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" style="padding-left: 5px;font-size: 26px;">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-lowercase" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1" style="padding-left: 5px;font-size: 26px;">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-lowercase"  href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sincero</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#apps">Apps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex text-left flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" alt="">
+
+      <!-- Masthead Heading -->
+      <h2 class="masthead-heading mb-20">Sincero</h2>
+      <br/>
+
+      <!-- Masthead Subheading -->
+      <p class="masthead-subheading font-weight-light mb-0">A one-stop tech shop for all your design and software development needs.</p>
+      <img src="img/bedazzle.png" width="166" height="166" title="icon" alt="icon">
+
+    </div>
+    <br/>
+    <div class="container text-right">
+
+      <div class="col-lg-6 ml-auto mb-5 mr-3">
+
+      <p class="masthead-subheading font-weight-light mb-5">Reach out to us for pricing questions, a chat about your business needs, or just to say hello.</p>
+      <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
+        <div class="control-group">
+          <div class="form-group floating-label-form-group mb-0 pb-12" style="border:none;">
+            <input class="form-control text-input-form" id="email" type="email" placeholder="your email address" required="required" data-validation-required-message="Please enter your email address." style="background: #1c6ed1; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 25px;  color: #F3A953; max-width: 320px !important; display: inline-block;" name="_replyto">
+            <button type="submit" class="btn btn-primary2 btn-xl side-buttons-submit-large-screen side-buttons-submit" id="sendMessageButton">submit</button>
+          </div>
+        </div>
+        <br>
+      </form>
+      </div>
+
+    </div>
+
+  </header>
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0649cb" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,208C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> -->
+  <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #0649cb;"></path></svg></div>
+
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="about">
+    <div class="container">
+
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-left text-lowercase text-headings-color mb-5">about us</h2>
+
+
+      <!-- Portfolio Grid Items -->
+       <div class="row">
+        <div class="col-lg-10 ml-auto mb-5">
+          <p class="lead text-center">A team of husband and wife, full stack <span style="font-weight: 900;"> software engineer </span> and  <span style="font-weight: 900;"> experience designer </span> respectively, teaming up since 2017 to bring <span style="font-weight: 900;"> products </spam> and  <span style="font-weight: 900;"> services </span> to life.</p>
         </div>
       </div>
-    </nav>
 
-    <!-- Intro Header -->
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <!-- d-none -->
+          <div class="d-lg-block text-center">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/franco.JPG " width="126" height="126" alt="">
+          </div>
+<!--           <div class="divider-custom-icon text-center">
+            <i class="fas fa-user-astronaut"></i>
+          </div> -->
+          <h5 class="text-center mb-3 text-headings-color"> Franco Abaroa </h5>
+          <ul class="ml-auto mb-5">
+          <li class="mx-0 mx-lg-1">
+            Full stack software engineer
+          </li>
+          <li class="mx-0 mx-lg-1">
+            Generalist software consultant
+          </li>
+          <li class="mx-0 mx-lg-1">
+            Well-versed in blockchain/cryptography technology
+          </li>
+          <li class="mx-0 mx-lg-1">
+            <a href="https://francoabaroa.com" target="_blank">
+            See more about my personal past work
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <div class="d-lg-block text-center">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/ale.jpeg" width="126" height="126" alt="">
+          </div>
+ <!--          <div class="divider-custom-icon text-center">
+            <i class="fas fa-user"></i>
+          </div> -->
+          <h5 class="text-center mb-3 text-headings-color"> Alejandra <span style="font-weight: strong"> Lacayo</span></h5>
+          <ul class="ml-auto">
+          <li class="mx-0 mx-lg-1">
+            User and customer experience, product and service designer
+          </li>
+          <li class="mx-0 mx-lg-1">
+            Workshop facilitator
+          </li>
+          <li class="mx-0 mx-lg-1">
+            Brand identity strategist
+          </li>
+        </ul>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section mb-0" id="services">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-lowercase text-headings-color mb-5">our services</h2>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <p class="lead"> Our studio offers our clients a wide range of services, which include but are not limited to: </p>
+          <p class="lead"> designing app and web <span style="font-weight: 900;"> UX/UI</span>,  architecting and building <span style="font-weight: 900;"> full stack applications </span>, creating and delivering design thinking <span style="font-weight: 900;">workshops </span> and more.</p>
+        </div>
+        <div class="col-lg-5 mr-auto row text-center">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h1 class="brand-heading">Sincero</h1>
-              <p class="intro-text">A frank and sincere development tech studio</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
+            <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Web App Development</h6>
+            <!-- <p class="text-muted">React, Node, Rails, SQL/NoSQL</p> -->
+          </div>
+          <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Mobile App Development</h6>
+            <!-- <p class="text-muted">Swift (iOS), React Native (iOS/Android)</p> -->
+          </div>
+<!--           <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Web Security</h6>
+            <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+          </div> -->
+          <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-bug fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Bug Fixing</h6>
+            <!-- <p class="text-muted">We will squash it for you in no time</p> -->
+          </div>
+          <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-magic fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Experience Design</h6>
+            <!-- <p class="text-muted">Have a lasting impact on your customers' experience</p> -->
+          </div>
+          <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-chalkboard-teacher fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">Experience Workshops</h6>
+            <!-- <p class="text-muted">Let's get our heads together and brainstorm how to improve your customers' experience</p> -->
+          </div>
+          <div class="col-md-4 mb-3">
+            <span class="fa-stack fa-2x mb-3">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-stethoscope fa-stack-1x fa-inverse"></i>
+            </span>
+            <h6 class="service-heading">App Diagnosis</h6>
+            <!-- <p class="text-muted">We'll help you figure out what's wrong with your product/application</p> -->
           </div>
         </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Sincero</h2>
-            <p>Sincero is a dev shop focused on creating delightful applications to make your life easier</p>
-          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Apps Section -->
-    <section id="apps" class="download-section content-section text-center">
-      <div class="container">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section bg-third" id="contact">
+    <div class="container">
+
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-right text-lowercase text-headings-color mb-5">contact us</h2>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p class="lead">To find out more about the services we offer, or to request a custom solution, submit your email below.</p>
+        </div>
+      </div>
+
+      <!-- Contact Section Form -->
+      <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Apps</h2>
-          <p>List will be updated shortly</p>
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-12 " style="border:none; margin-top:50px">
+                <input class="form-control text-input-form" id="email" type="email" placeholder="your email address" onfocus="this.placeholder = ''" required="required" data-validation-required-message="Please enter your email address." style="background: #F3F3F3; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 30px;  color: #F3A953; max-width: 320px !important;display: inline-block;" name="_replyto">
+                <button type="submit" class="btn btn-primary btn-xl side-buttons-submit-large-screen side-buttons-submit" id="sendMessageButton">submit</button>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
         </div>
       </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Sincero</h2>
-            <p>Drop us a line at contact@sincero.tech</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SinceroTech" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/SinceroDev" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/sincero-tech/" class="btn btn-default btn-lg">
-                  <i class="fa fa-linkedin fa-fw"></i>
-                  <span class="network-name">LinkedIn</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+    </div>
+  </section>
+
+  <!-- Copyright Section -->
+  <!-- <div style="height: 170px; overflow: hidden;" > -->
+<!--     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0649cb;"></path>
+    </svg> -->
+    <div style="height: 140px"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0649cb" fill-opacity="1" d="M0,192L80,170.7C160,149,320,107,480,122.7C640,139,800,213,960,229.3C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+  <!-- </div> -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="row">
+      <div class="col-lg-12 mb- mb-lg-0">
+          <a href="https://www.linkedin.com/company/sincero-tech/" class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/SinceroTech" class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+          <a href="https://twitter.com/SinceroTech" class="btn btn-outline-light btn-social mx-1" href="#">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
         </div>
-      </div>
-    </section>
+    </div>
+    <div class="container mt-4">
+      <small>Copyright &copy; Sincero LLC 2018</small>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; Sincero LLC 2018</p>
-      </div>
-    </footer>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
 
-  </body>
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+
+</body>
 
 </html>
