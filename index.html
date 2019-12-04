@@ -12,9 +12,8 @@
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo|Livvic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -25,7 +24,7 @@
 
   <!-- Navigation -->
   <nav class="navbar d-flex navbar-expand-lg bg-secondary text-uppercase fixed-top m-0" id="mainNav" style="padding:0;">
-    <div class="container">
+    <div class="container d-flex">
       <a class="navbar-brand js-scroll-trigger text-lowercase" href="#page-top"><img src="img/logo.png" width="52" height="56" title="icon" alt="icon"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary2 rounded" style="color:#36B1D8;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -50,9 +49,7 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex text-left flex-column">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" alt="">
-
+      <div class="masthead-avatar mb-5"></div>
       <!-- Masthead Heading -->
       <h2 class="masthead-heading mb-20">Sincero</h2>
       <br/>
@@ -68,11 +65,11 @@
       <div class="col-lg-6 ml-auto mb-5 mr-3">
 
       <p class="masthead-subheading font-weight-light mb-5">Reach out to us for pricing questions, a chat about your business needs, or just to say hello.</p>
-      <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
+      <form name="sentMessage" class="contactForms" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
         <div class="control-group">
           <div class="form-group floating-label-form-group mb-0 pb-12" style="border:none;">
-            <input class="form-control text-input-form" id="email" type="email" placeholder="your email address" required="required" data-validation-required-message="Please enter your email address." style="background: #1c6ed1; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 25px;  color: #F3A953; max-width: 320px !important; display: inline-block;" name="_replyto">
-            <button type="submit" class="btn btn-primary2 btn-xl side-buttons-submit-large-screen side-buttons-submit" id="sendMessageButton">submit</button>
+            <input class="form-control text-input-form emails" type="email" placeholder="your email address" required="required" data-validation-required-message="Please enter your email address." style="background: #1c6ed1; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 25px;  color: #F3A953; max-width: 320px !important; display: inline-block;" name="_replyto">
+            <button type="submit" class="btn btn-primary2 btn-xl side-buttons-submit-large-screen side-buttons-submit">submit</button>
           </div>
         </div>
         <br>
@@ -96,7 +93,8 @@
       <!-- Portfolio Grid Items -->
        <div class="row">
         <div class="col-lg-10 ml-auto mb-5">
-          <p class="lead text-center">A team of husband and wife, full stack <span style="font-weight: 900;"> software engineer </span> and  <span style="font-weight: 900;"> experience designer </span> respectively, teaming up since 2017 to bring <span style="font-weight: 900;"> products </spam> and  <span style="font-weight: 900;"> services </span> to life.</p>
+          <p class="lead text-center">A team of husband and wife, full stack <span style="font-weight: 900"> software engineer </span> and  <span style="font-weight: 900"> experience designer </span> respectively, teaming up since 2017 to bring <span style="font-weight: 900"> products </span> and <span style="font-weight: 900"> services </span> to life.
+          </p>
         </div>
       </div>
 
@@ -247,15 +245,16 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
+          <form name="sentMessage" class="contactForms" novalidate="novalidate" action="https://formspree.io/markwggx" method="POST">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-12 " style="border:none; margin-top:50px">
-                <input class="form-control text-input-form" id="email" type="email" placeholder="your email address" onfocus="this.placeholder = ''" required="required" data-validation-required-message="Please enter your email address." style="background: #F3F3F3; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 30px;  color: #F3A953; max-width: 320px !important;display: inline-block;" name="_replyto">
+                <input class="form-control text-input-form emails" type="email" placeholder="your email address" onfocus="this.placeholder = ''" required="required" data-validation-required-message="Please enter your email address." style="background: #F3F3F3; border: 2px solid #F3A953; box-sizing: border-box; border-radius: 50px; padding: 30px;  color: #F3A953; max-width: 320px !important;display: inline-block;" name="_replyto">
                 <button type="submit" class="btn btn-primary btn-xl side-buttons-submit-large-screen side-buttons-submit" id="sendMessageButton">submit</button>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <br>
+            </form>
             <div id="success"></div>
         </div>
       </div>
@@ -273,13 +272,13 @@
   <section class="copyright py-4 text-center text-white">
     <div class="row">
       <div class="col-lg-12 mb- mb-lg-0">
-          <a href="https://www.linkedin.com/company/sincero-tech/" class="btn btn-outline-light btn-social mx-1" href="#">
+          <a href="https://www.linkedin.com/company/sincero-tech/" class="btn btn-outline-light btn-social mx-1">
             <i class="fab fa-fw fa-linkedin-in"></i>
           </a>
-          <a href="https://github.com/SinceroTech" class="btn btn-outline-light btn-social mx-1" href="#">
+          <a href="https://github.com/SinceroTech" class="btn btn-outline-light btn-social mx-1">
             <i class="fab fa-fw fa-github"></i>
           </a>
-          <a href="https://twitter.com/SinceroTech" class="btn btn-outline-light btn-social mx-1" href="#">
+          <a href="https://twitter.com/SinceroTech" class="btn btn-outline-light btn-social mx-1">
             <i class="fab fa-fw fa-twitter"></i>
           </a>
         </div>

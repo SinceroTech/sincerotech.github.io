@@ -1,6 +1,6 @@
 $(function() {
 
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+  $(".contactForms input,.contactForms textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
@@ -9,7 +9,7 @@ $(function() {
       // event.preventDefault(); // prevent default submit behaviour
       // // get values from FORM
       // // var name = $("input#name").val();
-      // var email = $("input#email").val();
+      // var email = $("input.emails").val();
       // // var phone = $("input#phone").val();
       // // var message = $("textarea#message").val();
       // // var firstName = name; // For Success/Failure Message
@@ -39,7 +39,7 @@ $(function() {
       //     $('#success > .alert-success')
       //       .append('</div>');
       //     //clear all fields
-      //     $('#contactForm').trigger("reset");
+      //     $('.contactForms').trigger("reset");
       //   },
       //   error: function() {
       //     // Fail message
@@ -49,7 +49,7 @@ $(function() {
       //     $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
       //     $('#success > .alert-danger').append('</div>');
       //     //clear all fields
-      //     $('#contactForm').trigger("reset");
+      //     $('.contactForms').trigger("reset");
       //   },
       //   complete: function() {
       //     setTimeout(function() {
